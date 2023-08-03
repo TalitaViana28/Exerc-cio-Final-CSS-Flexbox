@@ -7,6 +7,9 @@
   <title>Flowers</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    document.documentElement.className += ' js';
+  </script>
 </head>
 
 <body>
@@ -23,7 +26,7 @@
       <div class="menu-logo">
         <a href="#">Flowers</a>
       </div>
-      <nav class="menu-nav">
+      <nav class="menu-nav js-menu">
         <ul>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#produtos">Produtos</a></li>
@@ -33,9 +36,9 @@
     </div>
   </header>
 
-  <h1 class="introducao">"As flores existem para nos lembrar que de pétala em pétala se cria uma beleza única."</h1>
+  <h1 class="introducao js-scroll">"As flores existem para nos lembrar que de pétala em pétala se cria uma beleza única."</h1>
 
-  <section class="sobre" id="sobre">
+  <section class="sobre js-scroll" id="sobre">
     <div class="sobre-info">
       <h1>Sobre</h1>
       <p> Orquídeas são todas as plantas que compõem a família Orchidaceae, pertencente à ordem Asparagales, uma das maiores famílias de plantas existentes. Apresentam muitíssimas e variadas formas, cores e tamanhos e existem em todos os continentes, exceto na Antártida, predominando nas áreas tropicais. </p>
@@ -49,7 +52,7 @@
     </div>
   </section>
 
-  <section class="produtos" id="produtos">
+  <section class="produtos js-scroll" id="produtos">
     <h1>Produtos</h1>
     <div class="produtos-container">
       <div class="produtos-item pink">
@@ -87,27 +90,21 @@
     </div>
   </section>
 
-  <section class="beneficios-bg" id="beneficios">
+  <section class="beneficios-bg js-scroll" id="beneficios">
     <div class="beneficios">
-      <div class="beneficio-item">
-        <h2>Minimizam as dores</h2>
-        <p>Segundo diversas pesquisas realizadas em hospitais, comprovou-se que pessoas internadas que ficam em contato com as flores que recebem de presente consomem menor quantidade de medicação para aliviar suas dores. Essas pesquisas também revelaram que as flores auxiliam na recuperação mais rápida dos doentes.</p>
-      </div>
+      <dl class="beneficio-item js-accordion">
+        <dt>Minimizam as dores</dt>
+        <dd>Segundo diversas pesquisas realizadas em hospitais, comprovou-se que pessoas internadas que ficam em contato com as flores que recebem de presente consomem menor quantidade de medicação para aliviar suas dores. Essas pesquisas também revelaram que as flores auxiliam na recuperação mais rápida dos doentes.</dd>
 
-      <div class="beneficio-item">
-        <h2>Ajudam a relaxar</h2>
-        <p>Estudos revelam que estar em contato com a natureza pode acalmar a mente e fortalecer a saúde emocional. Além disso, ter flores em casa (ou no ambiente de trabalho) ou praticar jardinagem contribui para a redução do estresse e contribuem para o bem-estar.</p>
-      </div>
+        <dt>Ajudam a relaxar</dt>
+        <dd>Estudos revelam que estar em contato com a natureza pode acalmar a mente e fortalecer a saúde emocional. Além disso, ter flores em casa (ou no ambiente de trabalho) ou praticar jardinagem contribui para a redução do estresse e contribuem para o bem-estar.</dd>
 
-      <div class="beneficio-item">
-        <h2>Melhoram a qualidade do ar</h2>
-        <p>As plantas transformam o dióxido de carbono em oxigênio e são capazes de retirar outras substâncias tóxicas que estão no ar, purificando-o. Além disso, são excelentes umidificadores naturais de ambientes.</p>
-      </div>
+        <dt>Melhoram a qualidade do ar</dt>
+        <dd>As plantas transformam o dióxido de carbono em oxigênio e são capazes de retirar outras substâncias tóxicas que estão no ar, purificando-o. Além disso, são excelentes umidificadores naturais de ambientes.</dd>
 
-      <div class="beneficio-item">
-        <h2>Inspiram a criatividade</h2>
-        <p>Caso a sua criatividade esteja um tanto preguiçosa, nada melhor do que observar as flores. Suas cores e desenhos são fontes de inspiração para criar ideias e deixar a imaginação fluir. Portanto, em situações de bloqueio criativo, recorra às flores.</p>
-      </div>
+        <dt>Inspiram a criatividade</dt>
+        <dd>Caso a sua criatividade esteja um tanto preguiçosa, nada melhor do que observar as flores. Suas cores e desenhos são fontes de inspiração para criar ideias e deixar a imaginação fluir. Portanto, em situações de bloqueio criativo, recorra às flores.</dd>
+      </dl>
     </div>
   </section>
 
@@ -117,6 +114,7 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 
 
